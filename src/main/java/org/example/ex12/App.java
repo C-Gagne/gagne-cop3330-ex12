@@ -46,6 +46,6 @@ public class App {
     public static String genOutputString(int years, double interest, double principle)
     {
         double finalValue = principle + ((years * (interest/100)) * principle);
-        return String.format("After %d years at %.2f, the investment will be worth $%.2f.", years, interest, finalValue);
+        return String.format("After %d years at %.2f%%, the investment will be worth $%.2f.", years, interest, finalValue);
     }
 }
